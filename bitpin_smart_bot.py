@@ -4,7 +4,7 @@
 BITPIN SMART GRID BOT v6 - PAPER TRADING
 هر خرید = هدف فروش مستقل (بدون ضرر)
 """
-
+import json
 import math
 import os
 import sys
@@ -59,9 +59,19 @@ SIGNAL_CHECK_EVERY = 5
 
 # مدیریت ریسک
 MAX_OPEN_BUYS = 3
-# بعد از تغییر (مقادیر فرضی برای گیت‌هاب)
-SELL_PROFIT_TARGET = 0.01
-HARD_STOP_LOSS = 0.05
+
+# ⚙️ خواندن تنظیمات از فایل config.json (برای امنیت استراتژی)
+try:
+    with open("config.json", "r", encoding="utf-8") as f:
+        config = json.load(f)
+    SELL_PROFIT_TARGET = config.get("SELL_PROFIT_TARGET", 0.01)
+    HARD_STOP_LOSS = config.get("HARD_STOP_LOSS", 0.05)
+    print("✅ Config loaded from config.json")
+except FileNotFoundError:
+    # مقادیر پیش‌فرض (همونی که در گیت‌هاب هست)
+    SELL_PROFIT_TARGET = 0.01
+    HARD_STOP_LOSS = 0.05
+    print("⚠️ config.json not found, using default public parameters")
 
 STATE_FILE = "bot_state.json"
 

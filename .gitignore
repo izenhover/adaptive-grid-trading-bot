@@ -230,3 +230,4 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 >>>>>>> e0a5a66071e6af2043773a088ae3fc6a7127a7db
+config.json
