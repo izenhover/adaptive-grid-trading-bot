@@ -59,8 +59,9 @@ SIGNAL_CHECK_EVERY = 5
 
 # مدیریت ریسک
 MAX_OPEN_BUYS = 3
-SELL_PROFIT_TARGET = 0.004  # ✅ هر خرید ۰.۴٪ سود هدف
-HARD_STOP_LOSS = 0.02        # ✅ فروش ضرر اجبار بعد از ۲٪ ضرر
+# بعد از تغییر (مقادیر فرضی برای گیت‌هاب)
+SELL_PROFIT_TARGET = 0.01
+HARD_STOP_LOSS = 0.05
 
 STATE_FILE = "bot_state.json"
 
