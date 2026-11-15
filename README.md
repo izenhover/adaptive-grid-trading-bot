@@ -26,7 +26,7 @@ A Python-based, algorithmic paper-trading bot designed for the Bitpin exchange. 
 ## ⚠️ Disclaimer
 This is an educational project built for **Paper Trading** (simulated funds). No real cryptocurrency is traded. Past performance in simulation does not guarantee future results.
 
-video link:https://www.youtube.com/watch?v=4l9xbMgBzxE
+video link: https://youtu.be/vRvqNNLB7aw
 
 <img width="1440" height="900" alt="Screenshot (179)" src="https://github.com/user-attachments/assets/9fb48365-3166-4827-aac1-f48f2e45a90c" />
 
