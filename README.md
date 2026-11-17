@@ -28,5 +28,4 @@ This is an educational project built for **Paper Trading** (simulated funds). No
 
 video link: https://youtu.be/FSPgSriGXKA
 
-<img width="1440" height="900" alt="Screenshot (179)" src="https://github.com/user-attachments/assets/9fb48365-3166-4827-aac1-f48f2e45a90c" />
 
